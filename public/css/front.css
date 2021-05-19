@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+ }
+ .bg {
+     background:  url('/images/bg.gif');
+     background-color: #1b0b0b;
+     height: 663.3px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+   }
+   
+ .text {
+     /* text-align: center; */
+     position: absolute;
+     top: 80%;
+     right: 20px;
+     left: 70%;
+     transform: translate(-50%, -50%);
+     color: white;
+     font-family: Cursive;
+    
+   }
+   .button {
+     /* position: absolute;
+     top:100px;
+     right: 0px; */
+     background-color: #000000; /* Green */
+     border: 1 solid white;
+     border-radius: 20px;
+     color: white;
+     padding: 5px;
+     padding-bottom: 20px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 25px;
+     margin: 4px 2px;
+     width: 500px;
+     height: 50px;
+     transition-duration: 0.4s;
+     cursor: pointer;
+   }
+   .button5:hover {
+     background-color: #555555;
+     color: white;
+   }
