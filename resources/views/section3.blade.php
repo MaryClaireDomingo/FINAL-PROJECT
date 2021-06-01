@@ -39,6 +39,12 @@
             <div class="label">
             <p class="font">Give yourself a time to smile for a while</p><hr class="hr">
             </div>
+
+            <div class="text-container">
+              <input type="text" disabled>
+              <textarea rows="10" cols="50" disabled></textarea>
+            </div>
+            
         </div>
     </div>
 </div>

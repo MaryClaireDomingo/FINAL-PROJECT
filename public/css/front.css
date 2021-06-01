@@ -6,7 +6,7 @@ body{
  .bg {
      background:  url('/images/bg.gif');
      background-color: #1b0b0b;
-     height: 663.3px;
+     height: 100vh;
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;

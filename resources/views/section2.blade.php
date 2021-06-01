@@ -36,10 +36,19 @@
         
 
         <div class="font">
-            <div class="label">
+          <div class="label">
             <p class="font">Might be your own Story</p><hr class="hr">
-            </div>
+          </div>
+
+
+          <div class="text-container">
+            <input type="text" disabled>
+            <textarea rows="10" cols="50" disabled></textarea>
+          </div>
+
+
         </div>
+        
     </div>
 </div>
       <a href="#top" class="goto">

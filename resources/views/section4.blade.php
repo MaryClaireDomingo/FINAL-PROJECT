@@ -39,6 +39,12 @@
             <div class="label">
             <p class="font">Time to breate out your negativity</p><hr class="hr">
             </div>
+
+            <div class="text-container">
+              <input type="text" disabled>
+              <textarea rows="10" cols="50" disabled></textarea>
+            </div>
+
         </div>
     </div>
 </div>

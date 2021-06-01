@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ URL::asset('/css/index.css') }}" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" defer></script>
 </head>
 
 <body>
@@ -32,20 +31,24 @@
         </div>
 <div class="container-fluid">
 
-  <div class="row content">
-        
-
+    <div class="row content">
         <div class="font">
             <div class="label">
             <p class="font">How are you Today? Please Share your thought</p><hr class="hr">
             </div>
+        </div>
+        <div class="text-container">
+          <input type="text" placeholder="Title here...">
+          <textarea rows="10" cols="50" placeholder="Enter your Story here..."></textarea>
+          <button>Submit Inspiration Story</button>
+          <button>Submit Laugh for a moment</button>
+          <button>Submit Negative Thoughts</button>
         </div>
     </div>
 </div>
       <a href="#top" class="goto">
   <span class="glyphicon glyphicon-chevron-up"></span></a>
 </div>
-    
   </div>
 </div>
 
