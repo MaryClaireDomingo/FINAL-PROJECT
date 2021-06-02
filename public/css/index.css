@@ -15,17 +15,31 @@
 
 
 
-.text-container {
-  /* background-color: red; */
-  padding: 50px;
+
+
+
+form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
+form button {
+  background-color: transparent;
+  width: 100%;
+  padding: 10px;
+}
+
+.text-container {
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .text-container input {
-  width: 50%;
+  width: 100%;
   padding: 5px 10px;
   font-size: 20px;
   letter-spacing: 1px;
@@ -37,7 +51,7 @@
 }
 
 .text-container textarea {
-  width: 50%;
+  width: 100%;
   font-size: 20px;
   padding: 10px;
   letter-spacing: 1px;
@@ -189,3 +203,4 @@ a:active {
     .goto{
     margin-left:0px;
     margin-top:20px;}
+

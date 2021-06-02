@@ -22,7 +22,10 @@
               <div class="dropdown-content">
               <a href="{{url('section5')}}">About Us</a>
               <a href="{{url('section6')}}">Contact Us</a>
-             
+              <form action="{{ route('logout') }}" method="POST">
+                @csrf
+                <button type="submit"> Logout </button>
+              </form>
               </div>
             </div>
             <a href="{{url('index')}}">How Are you Today?</a>
@@ -40,10 +43,27 @@
             <p class="font">Give yourself a time to smile for a while</p><hr class="hr">
             </div>
 
-            <div class="text-container">
-              <input type="text" disabled>
-              <textarea rows="10" cols="50" disabled></textarea>
-            </div>
+            @if (session('success'))
+              <script>
+                alert('Successfully Deleted');
+              </script>
+            @endif
+
+            
+            @if ($stories->count())
+              @foreach ($stories as $story)
+                @if ($story->type == "Laugh")
+                  <div class="text-container">
+                    <input type="text" disabled value="{{ $story->title }}">
+                    <textarea rows="10" cols="50" disabled>{{ $story->body }}</textarea>
+                    <form action="{{ route('delete', $story->id) }}" method="POST">
+                      @csrf
+                      <button> Delete Story </button>
+                    </form>
+                  </div>                  
+                @endif
+              @endforeach
+            @endif
             
         </div>
     </div>

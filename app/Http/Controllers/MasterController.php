@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Story;
+
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+
 
 class MasterController extends Controller
 {
@@ -12,29 +16,41 @@ class MasterController extends Controller
         return view('front');
     }
 
+    function register() {
+        return view('register');
+    }
+
+    function registerUser(Request $request) {        
+        
+        $this->validate($request, [
+            'name' => 'required|max:255',
+            'email' => 'required|email|max:255|unique:users',
+            'password' => 'required|confirmed'
+        ]);
+
+        User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password)
+        ]);
+
+        return back()->with('success', ' ');
+
+    }
+
 
     function login() {
         return view('login');
     }
 
-    function loginAdmin(Request $request) {
-
-        
+    function loginUser(Request $request) {        
         $credentials = $request->only('email', 'password');
-        // dd($credentials);
 
-        if(!auth()->attempt($credentials)){
+        if(auth()->attempt($credentials)){
             return redirect()->route('index');
         }
 
         return back()->with('error', ' ');
-
-        
-        
-
-        // return view('login', [
-        //     $users => 'users'
-        // ]);
 
     }
 
@@ -44,21 +60,22 @@ class MasterController extends Controller
     }
 
 
-    function section1() {
-        return view('section1');
-    }
-
-
     function section2() {
-        return view('section2');
+        return view('section2', [
+            'stories' => Story::get()
+        ]);
     }
 
     function section3() {
-        return view('section3');
+        return view('section2', [
+            'stories' => Story::get()
+        ]);
     }
 
     function section4() {
-        return view('section4');
+        return view('section2', [
+            'stories' => Story::get()
+        ]);
     }
 
     function section5() {
@@ -67,6 +84,16 @@ class MasterController extends Controller
 
     function section6() {
         return view('section6');
+    }
+
+
+
+    public function logout(){
+        
+        auth()->logout();
+
+        return redirect('login');
+
     }
 
 

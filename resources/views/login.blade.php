@@ -9,13 +9,12 @@
   <link rel="stylesheet" href="{{ URL::asset('/css/bootstrap.min.css') }}" />
   <script type="text/javascript" src="{{ URL::asset('/js/bootstrap.js') }}"></script>
   <script type="text/javascript" src="{{ URL::asset('/js/bootstrap.mini.js') }}"></script>
-  
 </head>
 <body>
 
   @if (session('error'))
     <script>
-      alert('Invalid Admin');
+      alert('Invalid User');
     </script>
   @endif
 
@@ -28,10 +27,12 @@
             <input class="input" type = "text" name="email" placeholder = "Enter your email" required autofocus> <br> <br>
             <input class="input" type = "password" name="password" placeholder = "Enter your Password" maxlength = "20" required> <br> <br>
             <input class="login" type = "submit" value = "log in">
+            <div class="btn-choice">
+              <a href="{{ route('register') }}">Create Account</a>
+            </div>
           </form>
         </header>
-
-</div>
+    </div>
   </div>
 </body>
 </html>

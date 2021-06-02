@@ -21,15 +21,26 @@
               <div class="dropdown-content">
               <a href="{{url('section5')}}">About Us</a>
               <a href="{{url('section6')}}">Contact Us</a>
-             
+              <form action="{{ route('logout') }}" method="POST">
+                @csrf
+                <button type="submit"> Logout </button>
+              </form>
               </div>
-            </div>
+          </div>
             <a href="{{url('index')}}">How Are you Today?</a>
             <a href="{{url('section2')}}" >Inspirational Story</a>
             <a href="{{url('section3')}}" >Laugh for a Moment</a>
             <a href="{{url('section4')}}" >Negative Thoughts</a>
-        </div>
+          </div>
 <div class="container-fluid">
+
+
+  @if (session('success'))
+    <script>
+      alert('Successfully Posted');
+    </script>
+  @endif
+
 
     <div class="row content">
         <div class="font">
@@ -38,11 +49,27 @@
             </div>
         </div>
         <div class="text-container">
-          <input type="text" placeholder="Title here...">
-          <textarea rows="10" cols="50" placeholder="Enter your Story here..."></textarea>
-          <button>Submit Inspiration Story</button>
-          <button>Submit Laugh for a moment</button>
-          <button>Submit Negative Thoughts</button>
+          <form action="{{ route('inspirational') }}" method="POST">
+            @csrf
+            <input name="title" type="text" placeholder="Title here..." required>
+            <textarea name="body" rows="10" cols="50" placeholder="Enter your Story here..." required></textarea>
+            <button>Submit Inspiration Story</button>
+          </form>
+          
+          <form action="{{ route('laugh') }}" method="POST">
+            @csrf
+            <input name="title" type="text" placeholder="Title here..." required>
+            <textarea name="body" rows="10" cols="50" placeholder="Enter your Story here..." required></textarea>
+            <button>Submit Laugh for a moment</button>
+          </form>
+
+          <form action="{{ route('negative') }}" method="POST">
+            @csrf
+            <input name="title" type="text" placeholder="Title here..." required>
+            <textarea name="body" rows="10" cols="50" placeholder="Enter your Story here..." required></textarea>
+            <button>Submit Negative Thoughts</button>
+          </form>
+
         </div>
     </div>
 </div>
