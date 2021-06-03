@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
+use App\Models\Story;
+
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
@@ -42,7 +44,7 @@ class User extends Authenticatable
     ];
 
 
-    public function story(){
+    public function stories(){
         return $this->hasMany(Story::class);
     }
 

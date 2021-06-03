@@ -12,7 +12,7 @@ class StoryController extends Controller
 
     public function inspirational(Request $req){
 
-        $req->user()->story()->create([
+        $req->user()->stories()->create([
             'title' => $req->title,
             'body' => $req->body,
             'type' => 'Inspirational'
@@ -25,9 +25,24 @@ class StoryController extends Controller
     
     public function laugh(Request $req){
 
-        $req->user()->story()->create([
+
+        // $this->validate($req, [
+        //     'image' => 'required|mimes:jpeg,jpg,png|max:5048'
+        // ]);
+        
+        // $image = $req->file('image');
+
+        $filename = $req->image->getClientOriginalName();
+
+        $req->image->move(public_path('all-images'), $filename);
+
+        // $user->update([
+        //     'image' => $filename
+        // ]);
+
+        $req->user()->stories()->create([
             'title' => $req->title,
-            'body' => $req->body,
+            'body' => $filename,
             'type' => 'Laugh'
         ]);
 
@@ -38,7 +53,7 @@ class StoryController extends Controller
 
     public function negative(Request $req){
 
-        $req->user()->story()->create([
+        $req->user()->stories()->create([
             'title' => $req->title,
             'body' => $req->body,
             'type' => 'Negative'

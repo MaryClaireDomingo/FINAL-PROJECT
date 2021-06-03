@@ -16,12 +16,10 @@ class CreateStoriesTable extends Migration
         Schema::create('stories', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
-
-            $table->string('title');
-            $table->string('body');
-            $table->string('type');
+            $table->text('title');
+            $table->text('body');
+            $table->text('type');
 
         });
     }

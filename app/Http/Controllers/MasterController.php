@@ -67,13 +67,13 @@ class MasterController extends Controller
     }
 
     function section3() {
-        return view('section2', [
+        return view('section3', [
             'stories' => Story::get()
         ]);
     }
 
     function section4() {
-        return view('section2', [
+        return view('section4', [
             'stories' => Story::get()
         ]);
     }

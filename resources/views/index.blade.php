@@ -56,11 +56,17 @@
             <button>Submit Inspiration Story</button>
           </form>
           
-          <form action="{{ route('laugh') }}" method="POST">
+          <form action="{{ route('laugh') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <input name="title" type="text" placeholder="Title here..." required>
-            <textarea name="body" rows="10" cols="50" placeholder="Enter your Story here..." required></textarea>
-            <button>Submit Laugh for a moment</button>
+            <div class="form-input">
+              <label for="file-ip-1">Upload Image or Video</label>
+              <input name="image" type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);" required>
+              <div class="preview">
+                <img id="file-ip-1-preview">
+              </div>
+            </div>
+            <button id="laugh">Submit Laugh for a moment</button>
           </form>
 
           <form action="{{ route('negative') }}" method="POST">
@@ -100,6 +106,16 @@
 			return false;
 		})
 	});
+
+
+  function showPreview(event){
+    if(event.target.files.length > 0){
+      var src = URL.createObjectURL(event.target.files[0]);
+      var preview = document.getElementById("file-ip-1-preview");
+      preview.src = src;
+      preview.style.display = "block";
+    }
+  }
 </script>	
 
 </body>

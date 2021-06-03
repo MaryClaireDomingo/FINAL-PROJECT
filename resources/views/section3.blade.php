@@ -55,10 +55,10 @@
                 @if ($story->type == "Laugh")
                   <div class="text-container">
                     <input type="text" disabled value="{{ $story->title }}">
-                    <textarea rows="10" cols="50" disabled>{{ $story->body }}</textarea>
+                    <img src="{{ asset('all-images/' . $story->body) }}">
                     <form action="{{ route('delete', $story->id) }}" method="POST">
                       @csrf
-                      <button> Delete Story </button>
+                      <button> Delete Laugh Image </button>
                     </form>
                   </div>                  
                 @endif
