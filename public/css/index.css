@@ -37,7 +37,7 @@ form button {
 }
 
 .text-container input {
-  width: 100%;
+  width: 80%;
   padding: 5px 10px;
   font-size: 20px;
   letter-spacing: 1px;
@@ -49,7 +49,7 @@ form button {
 }
 
 .text-container textarea {
-  width: 100%;
+  width: 80%;
   font-size: 20px;
   padding: 10px;
   letter-spacing: 1px;
@@ -214,7 +214,7 @@ a:active {
 
 /* for Image  */
 .form-input {
-  width:100%;
+  width:80%;
   padding:50px 0;
 }
 
@@ -249,11 +249,11 @@ a:active {
 }
 .con2{
   position:absolute;
-  top: 880px;
-  right: 550px;
+  top: 890px;
+  right: 800px;
 }
 .con3{
   position:absolute;
-  top: 1180px;
-  right: 400px;
+  top: 890px;
+  right: 100px;
 }
