@@ -1,4 +1,7 @@
 
+body{
+    overflow-x: hidden;
+}
 .jumbotron{
     background-image: url('/images/section2.gif');
     height: 230px;
