@@ -1,4 +1,6 @@
-
+body{
+  overflow-x: hidden;
+}
 .jumbotron{
     background-image: url('/images/section1.gif');
     height: 230px;
@@ -6,18 +8,11 @@
 }
 /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
 .row.content {
+   
     height: 1500px;
-    background-color: #4950577c;
+    background-color: #aed6dc;
    
 }
-/* Set black background color, white text and some padding */
-
-
-
-
-
-
-
 form {
   width: 100%;
   display: flex;
@@ -34,7 +29,7 @@ form button {
 }
 
 .text-container {
-  /* width: 100%; */
+  width: 100%;
   padding: 50px;
   display: flex;
   justify-content: space-around;
@@ -81,16 +76,10 @@ form button {
   color: white;
   background-color: #444;
 }
-
-
-
-
-
-
 footer {
    /*  background-image: url('/images/background.png'); */
    background-color: black;
-    height: 150px;
+    height: 80px;
     color: rgb(253, 253, 253);
     padding: 15px;
     border-top: 20px solid black;
@@ -99,13 +88,25 @@ footer {
 	color:#0f0f0f; 	
 	font-size:38px;
 	position:absolute;
-    right: 50px;
+  right: 50px;
 	margin-top:50px;
 	margin-left:390px;
 }
-
+.front{
+  border-bottom: 2px solid black;
+  height: 50px ;
+  padding-left: 25px;
+  padding-right:25px;
+  text-align: left;
+  font-family: cursive;
+  font-size: 20px;
+  color: black;
+}
 .font{
-    margin:25px;
+  height: 1350px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 2.5em;
     padding-left: 25px;
     padding-right:25px;
     text-align: left;
@@ -117,18 +118,17 @@ footer {
     padding-top: 10px;
   
 }
-.hr{
-    border-top: 10px solid black;
-}
+
 .navigation{
-    padding-left: 10px;
-    padding-right: 20px;
-    background-color: #495057;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 25px;
+    background-color: #4a536b;
     text-decoration: none;
-    border-bottom: 10px solid black;
+    /* border-bottom: 10px solid black; */
 }
 a:link, a:visited {
-    font-size: 15px;
+    font-size: 18px;
     font-family: cursive;
     background-color: #49505781;
     color: rgb(255, 255, 255);
@@ -140,15 +140,15 @@ a:link, a:visited {
   }
 a:hover {
     background-color: rgb(194, 194, 194);
-    color: rgb(179, 54, 54);
+    ;
   }
 a:active {
    background-color: rgb(194, 194, 194);
-        color: rgb(177, 51, 51);
+  
 }
 
 .dropbtn {
-    background-color: #49505781;
+    background-color: #3b4d61;
     color: white;
     padding: 16px;
     font-size: 15px;
@@ -239,4 +239,19 @@ a:active {
   width:100%;
   display:none;
   margin-top:10px;
+}
+.con1{
+  position:absolute;
+  top: 430px;
+  right: 400px;
+}
+.con2{
+  position:absolute;
+  top: 880px;
+  right: 550px;
+}
+.con3{
+  position:absolute;
+  top: 1180px;
+  right: 400px;
 }

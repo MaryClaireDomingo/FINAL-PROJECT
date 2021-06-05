@@ -32,7 +32,8 @@
             <a href="{{url('section3')}}" >Laugh for a Moment</a>
             <a href="{{url('section4')}}" >Negative Thoughts</a>
           </div>
-<div class="container-fluid">
+
+<div class="content">
 
 
   @if (session('success'))
@@ -45,39 +46,45 @@
     <div class="row content">
         <div class="font">
             <div class="label">
-            <p class="font">How are you Today? Please Share your thought</p><hr class="hr">
+            <p class="front">How are you Today? Please Share your thought</p>
             </div>
-        </div>
-        <div class="text-container">
-          <form action="{{ route('inspirational') }}" method="POST">
-            @csrf
-            <input name="title" type="text" placeholder="Title here..." required>
-            <textarea name="body" rows="10" cols="50" placeholder="Enter your Story here..." required></textarea>
-            <button>Submit Inspiration Story</button>
-          </form>
-          
-          <form action="{{ route('laugh') }}" method="POST" enctype="multipart/form-data">
-            @csrf
-            <input name="title" type="text" placeholder="Title here..." required>
-            <div class="form-input">
-              <label for="file-ip-1">Upload Image or Video</label>
-              <input name="image" type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);" required>
-              <div class="preview">
-                <img id="file-ip-1-preview">
+        
+       <div class="text-container">
+          <div class="con1">
+            <form action="{{ route('inspirational') }}" method="POST">
+              @csrf
+              <input name="title" type="text" placeholder="Title here..." required>
+              <textarea name="body" rows="10" cols="50" placeholder="Enter your Story here..." required></textarea>
+              <button>Submit Inspiration Story</button>
+            </form>
+          </div> 
+
+          <div class="con2">
+            <form action="{{ route('laugh') }}" method="POST" enctype="multipart/form-data">
+              @csrf
+              <input name="title" type="text" placeholder="Title here..." required>
+              <div class="form-input">
+                <label for="file-ip-1">Upload Image or Video</label>
+                <input name="image" type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);" required>
+                <div class="preview">
+                  <img id="file-ip-1-preview">
+                </div>
               </div>
-            </div>
-            <button id="laugh">Submit Laugh for a moment</button>
-          </form>
+              <button id="laugh">Submit Laugh for a moment</button>
+            </form>
+          </div>
 
-          <form action="{{ route('negative') }}" method="POST">
-            @csrf
-            <input name="title" type="text" placeholder="Title here..." required>
-            <textarea name="body" rows="10" cols="50" placeholder="Enter your Story here..." required></textarea>
-            <button>Submit Negative Thoughts</button>
-          </form>
-
+          <div class="con3">
+            <form action="{{ route('negative') }}" method="POST">
+              @csrf
+              <input name="title" type="text" placeholder="Title here..." required>
+              <textarea name="body" rows="10" cols="50" placeholder="Enter your Story here..." required></textarea>
+              <button>Submit Negative Thoughts</button>
+            </form>
+          </div> 
         </div>
-    </div>
+    </div> 
+</div>
 </div>
       <a href="#top" class="goto">
   <span class="glyphicon glyphicon-chevron-up"></span></a>
