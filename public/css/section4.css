@@ -6,14 +6,14 @@
 }
 /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
 .row.content {
-    background-color: #4950577c;
+  background-color: #aed6dc;
    
 }
 /* Set black background color, white text and some padding */
 footer {
    /*  background-image: url('/images/background.png'); */
    background-color: black;
-    height: 150px;
+    height: 80px;
     color: rgb(253, 253, 253);
     padding: 15px;
     border-top: 20px solid black;
@@ -26,15 +26,28 @@ footer {
 	margin-top:50px;
 	margin-left:390px;
 }
-
+.front{
+  border-bottom: 2px solid black;
+  height: 50px ;
+  background-color: #ff9a8d;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right:25px;
+  text-align: left;
+  font-family: cursive;
+  font-size: 20px;
+  color: black;
+}
 .font{
-    margin:25px;
-    padding-left: 25px;
-    padding-right:25px;
-    text-align: left;
-    font-family: cursive;
-    font-size: 20px;
-    color: black;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 2.5em;
+  padding-left: 25px;
+  padding-right:25px;
+  text-align: left;
+  font-family: cursive;
+  font-size: 20px;
+  color: black;
 }
 .label{
     padding-top: 10px;
@@ -44,16 +57,17 @@ footer {
     border-top: 10px solid black;
 }
 .navigation{
-    padding-left: 10px;
-    padding-right: 20px;
-    background-color: #495057;
-    text-decoration: none;
-    border-bottom: 10px solid black;
+  height: auto;
+  padding-left: 15px;
+  padding-right: 25px;
+  background-color: #4a536b;
+  text-decoration: none;
+  /* border-bottom: 10px solid black; */
 }
 a:link, a:visited {
-    font-size: 15px;
+    font-size: 18px;
     font-family: cursive;
-    background-color: #49505781;
+    background-color: #4a536b;
     color: rgb(255, 255, 255);
     border: 0px solid  #495057;
     padding: 10px 20px;
@@ -142,11 +156,12 @@ a:active {
   align-items: center;
   flex-direction: column;
 }
-
 .text-container input {
-  width: 50%;
+  font-weight: bolder;
+  text-align: center;
+  width: 80%;
   padding: 5px;
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: 1px;
   margin: 10px 0;
   border-radius: 5px;
@@ -156,7 +171,8 @@ a:active {
 }
 
 .text-container textarea {
-  width: 50%;
+  text-align: justify;
+  width: 80%;
   font-size: 20px;
   padding: 10px;
   letter-spacing: 1px;

@@ -40,7 +40,7 @@
 
         <div class="font">
             <div class="label">
-            <p class="font">Time to breate out your negativity</p><hr class="hr">
+            <p class="front">Time to breate out your negativity</p><hr class="hr">
             </div>
 
             @if (session('success'))
@@ -55,7 +55,7 @@
                 @if ($story->type == "Negative")
                   <div class="text-container">
                     <input type="text" disabled value="{{ $story->title }}">
-                    <textarea rows="10" cols="50" disabled>{{ $story->body }}</textarea>
+                    <textarea rows="35" cols="50" disabled>{{ $story->body }}</textarea>
                     <form action="{{ route('delete', $story->id) }}" method="POST">
                       @csrf
                       <button> Delete Story </button>
@@ -76,7 +76,7 @@
 </div>
 
 <footer class="container-fluid">
-  <p>Footer Text</p>
+  
  
 </footer>
 <script>            

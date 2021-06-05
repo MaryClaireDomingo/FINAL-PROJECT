@@ -64,7 +64,7 @@
               @csrf
               <input name="title" type="text" placeholder="Title here..." required>
               <div class="form-input">
-                <label for="file-ip-1">Upload Image or Video</label>
+                <label for="file-ip-1">Upload Image </label>
                 <input name="image" type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);" required>
                 <div class="preview">
                   <img id="file-ip-1-preview">
@@ -93,7 +93,7 @@
 </div>
 
 <footer class="container-fluid">
-  <p>Footer Text</p>
+  
  
 </footer>
 <script>            

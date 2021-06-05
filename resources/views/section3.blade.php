@@ -40,7 +40,7 @@
 
         <div class="font">
             <div class="label">
-            <p class="font">Give yourself a time to smile for a while</p><hr class="hr">
+            <p class="front">Give yourself a time to smile for a while</p><hr class="hr">
             </div>
 
             @if (session('success'))
@@ -76,7 +76,7 @@
 </div>
 
 <footer class="container-fluid">
-  <p>Footer Text</p>
+  
  
 </footer>
 <script>            
