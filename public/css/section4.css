@@ -39,7 +39,7 @@ footer {
   color: black;
 }
 .font{
-  border: 2px solid black;
+  border: 20px solid black;
   border-radius: 20px;
   margin: 2.5em;
   padding-left: 25px;
@@ -53,9 +53,7 @@ footer {
     padding-top: 10px;
   
 }
-.hr{
-    border-top: 10px solid black;
-}
+
 .navigation{
   height: auto;
   padding-left: 15px;
@@ -174,6 +172,7 @@ a:active {
   text-align: justify;
   width: 80%;
   font-size: 20px;
+  margin-top: 20px;
   padding: 10px;
   letter-spacing: 1px;
   margin-bottom: 20px;

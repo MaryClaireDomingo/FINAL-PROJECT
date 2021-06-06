@@ -40,7 +40,7 @@
 
         <div class="font">
             <div class="label">
-            <p class="front">Time to breate out your negativity</p><hr class="hr">
+            <p class="front">Time to breate out your negativity</p>
             </div>
 
             @if (session('success'))

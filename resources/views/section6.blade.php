@@ -4,7 +4,7 @@
   <title>Sabaiba Website</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ URL::asset('/css/section5.css') }}" />
+  <link rel="stylesheet" href="{{ URL::asset('/css/section6.css') }}" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" defer></script>
@@ -36,9 +36,25 @@
         <div class="font">
             <div class="label">
             <p class="front">Contact us</p>
-            <p class="front">Contact us</p>
-            <p class="front">Contact us</p>
-            <p class="front">Contact us</p>
+            <div class="about-section">
+
+
+              <h2 style="text-align:center">Our Team</h2>
+              <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <img src="/images/background.png" alt="Jane" style="width:100%">
+                    <div class="container">
+                      <h2>Jane Doe</h2>
+                      <p class="title">CEO & Founder</p>
+                      <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                      <p>jane@example.com</p>
+                      <!-- <p><button class="button">Contact</button></p> -->
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
         </div>    
         </div>

@@ -40,7 +40,7 @@
 
         <div class="font">
           <div class="label">
-            <p class="front">Might be your own Story</p><hr class="hr">
+            <p class="front">Might be your own Story</p>
           </div>
 
           @if (session('success'))

@@ -35,10 +35,12 @@
           <div class="row content">
         <div class="font">
             <div class="label">
-            <p class="front">about us</p>
-            <p class="front">about us</p>
-            <p class="front">about us</p>
-            <p class="front">about us</p>
+            <h1 class="front">~~~ About Sabaiba ~~~</h1>
+            <p>Since 1999, Internet Marketing Ninjas has mastered <br/>
+            the art of creating expert content that goes viral, earns trusted links, <br/>
+            and ranks at the top of Google. Looking to transform your content marketing strategy? <br/>
+            Learn how our Ninja team can help by scheduling a FREE consultation today.<br/>
+            
             </div>
         </div>    
         </div>

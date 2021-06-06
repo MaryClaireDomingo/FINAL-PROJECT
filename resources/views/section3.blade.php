@@ -40,7 +40,7 @@
 
         <div class="font">
             <div class="label">
-            <p class="front">Give yourself a time to smile for a while</p><hr class="hr">
+            <p class="front">Give yourself a time to smile for a while</p>
             </div>
 
             @if (session('success'))
