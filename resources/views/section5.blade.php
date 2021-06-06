@@ -18,8 +18,8 @@
 <div class="dropdown" style="float:right;">
               <a class="glyphicon glyphicon-menu-hamburger"></a>
               <div class="dropdown-content">
-              <a href="{{url('section5')}}">About Us</a>
-              <a href="{{url('section6')}}">Contact Us</a>
+              <a href="{{url('section5')}}">About</a>
+              <a href="{{url('section6')}}">Contact </a>
               <form action="{{ route('logout') }}" method="POST">
                 @csrf
                 <button type="submit"> Logout </button>

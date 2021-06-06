@@ -19,9 +19,9 @@
 <div class="dropdown" style="float:right;">
               <a class="glyphicon glyphicon-menu-hamburger"></a>
               <div class="dropdown-content">
-              <a href="{{url('section5')}}">About Us</a>
-              <a href="{{url('section6')}}">Contact Us</a>
-              <form action="{{ route('logout') }}" method="POST">
+              <a href="{{url('section5')}}">About</a>
+              <a href="{{url('section6')}}">Contact</a>
+              <form  action="{{ route('logout') }}" method="POST">
                 @csrf
                 <button type="submit"> Logout </button>
               </form>
@@ -51,7 +51,7 @@
         
        <div class="text-container">
           <div class="con1">
-            <form action="{{ route('inspirational') }}" method="POST">
+            <form class="log" action="{{ route('inspirational') }}" method="POST">
               @csrf
               <input name="title" type="text" placeholder="Title here..." required>
               <textarea name="body" rows="10" cols="50" placeholder="Enter your Story here..." required></textarea>
@@ -60,7 +60,7 @@
           </div> 
 
           <div class="con2">
-            <form action="{{ route('laugh') }}" method="POST" enctype="multipart/form-data">
+            <form class="log" action="{{ route('laugh') }}" method="POST" enctype="multipart/form-data">
               @csrf
               <input name="title" type="text" placeholder="Title here..." required>
               <div class="form-input">
@@ -75,7 +75,7 @@
           </div>
 
           <div class="con3">
-            <form action="{{ route('negative') }}" method="POST">
+            <form class="log" action="{{ route('negative') }}" method="POST">
               @csrf
               <input name="title" type="text" placeholder="Title here..." required>
               <textarea name="body" rows="10" cols="50" placeholder="Enter your Story here..." required></textarea>

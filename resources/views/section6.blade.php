@@ -14,59 +14,51 @@
 <div class="jumbotron text-center" style="margin-bottom:0">
  
 </div>
+
 <div class="navigation">
-<div class="dropdown" style="float:right;">
-              <a class="glyphicon glyphicon-menu-hamburger"></a>
-              <div class="dropdown-content">
-              <a href="{{url('section5')}}">About Us</a>
-              <a href="{{url('section6')}}">Contact Us</a>
+  <div class="dropdown" style="float:right;">
+      <a class="glyphicon glyphicon-menu-hamburger"></a>
+        <div class="dropdown-content">
+          <a href="{{url('section5')}}">About</a>
+            <a href="{{url('section6')}}">Contact</a>
               <form action="{{ route('logout') }}" method="POST">
                 @csrf
                 <button type="submit"> Logout </button>
               </form>
-              </div>
-          </div>
+        </div>
+    </div>
             <a href="{{url('index')}}">How Are you Today?</a>
             <a href="{{url('section2')}}" >Inspirational Story</a>
             <a href="{{url('section3')}}" >Laugh for a Moment</a>
             <a href="{{url('section4')}}" >Negative Thoughts</a>
-          </div>
+          <!-- </div> -->
 
-          <div class="row content">
-        <div class="font">
+        <div class="row content">
+          <div class="font">
             <div class="label">
-            <p class="front">Contact us</p>
-            <div class="about-section">
+              <p class="front">Contact us</p>
+                <div class="about-section">
 
+                  <div class="header"> 
+                    <h2 style="text-align:center">Our Sabaiba Team</h2>
+              
 
-              <h2 style="text-align:center">Our Team</h2>
-              <div class="row">
-                <div class="column">
-                  <div class="card">
-                    <img src="/images/background.png" alt="Jane" style="width:100%">
-                    <div class="container">
-                      <h2>Jane Doe</h2>
-                      <p class="title">CEO & Founder</p>
-                      <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                      <p>jane@example.com</p>
-                      <!-- <p><button class="button">Contact</button></p> -->
-                    </div>
                   </div>
                 </div>
-
-              </div>
-            </div>
-        </div>    
+            </div>    
+          </div>
         </div>
-      <a href="#top" class="goto">
-  <span class="glyphicon glyphicon-chevron-up"></span></a>
-</div>
+          <a href="#top" class="goto">
+            <span class="glyphicon glyphicon-chevron-up"></span></a>
+    </div>
   </div>
 </div>
+
+
 <footer class="container-fluid">
-  
- 
 </footer>
+
+
 <script>            
 	$(document).ready(function() {
 		var duration = 500;
