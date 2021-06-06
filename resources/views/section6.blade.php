@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" defer></script>
-</head>
+  <script src="https://kit.fontawesome.com/a076d05399.js" defer ></script>
 
 <body>
 <div class="jumbotron text-center" style="margin-bottom:0">
@@ -36,24 +36,74 @@
         <div class="row content">
           <div class="font">
             <div class="label">
-              <p class="front">Contact us</p>
+              <p class="front">Our Sabaiba Team</p>
                 <div class="about-section">
-
-                  <div class="header"> 
-                    <h2 style="text-align:center">Our Sabaiba Team</h2>
-              
-
+<!-- </div> -->
+            <!-- <h2 style="text-align:center">Our Sabaiba Team</h2> -->
+              <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <img src="/images/busa.jpg" alt="busa" style="width:100%">
+                    <div class="container">
+                      <p>Ma. Fatricia Busa</p>
+                      <p class="title">Bachelor of Science in </br> Computer Science</p>
+                      <p>Third Year Student</p>
+                    
+                    </div>
                   </div>
                 </div>
+
+
+              
+                <div class="column">
+                  <div class="card">
+                    <img src="/images/jen.jpg" alt="jen" style="width:100%">
+                    <div class="container">
+                      <p>Jenniveb Dancil</p>
+                      <p class="title">Bachelor of Science in </br> Computer Science</p>
+                      <p>Third Year Student</p>
+                      <!-- <p>jane@example.com</p> -->
+                     <!--  <p><button class="button">Contact</button></p> -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="card">
+                    <img src="/images/claire.jpg" alt="claire" style="width:100%">
+                    <div class="container">
+                      <p>Mary Claire Domingo</p>
+                      <p class="title">Bachelor of Science in </br> Computer Science</p>
+                      <p>Third Year Student</p>
+                      <!-- <p>jane@example.com</p> -->
+                     <!--  <p><button class="button">Contact</button></p> -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <div class="card">
+                    <img src="/images/grasya.jpg" alt="grace" style="width:100%">
+                    <div class="container">
+                      <p>Mary Grace Espinosa</p>
+                      <p class="title">Bachelor of Science in </br> Computer Science</p>
+                      <p>Third Year Student</p>
+                      <!-- <p>jane@example.com</p> -->
+                     <!--  <p><button class="button">Contact</button></p> -->
+                    </div>
+                  </div>
+                </div>
+
+                </div>        
             </div>    
           </div>
         </div>
           <a href="#top" class="goto">
             <span class="glyphicon glyphicon-chevron-up"></span></a>
+      </div>
     </div>
   </div>
 </div>
-
 
 <footer class="container-fluid">
 </footer>
