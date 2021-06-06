@@ -55,7 +55,7 @@
               @if ($story->type == "Inspirational")
                 <div class="text-container">
                   <input type="text" disabled value="{{ $story->title }}">
-                  <textarea rows="30" cols="50" disabled>{{ $story->body }}</textarea>
+                  <textarea rows="15" cols="50" disabled>{{ $story->body }}</textarea>
                   <form action="{{ route('delete', $story->id) }}" method="POST">
                     @csrf
                     <button> Delete Story </button>
