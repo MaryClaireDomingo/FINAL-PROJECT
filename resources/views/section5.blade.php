@@ -36,11 +36,20 @@
         <div class="font">
             <div class="label">
             <h1 class="front">~~~ About Sabaiba ~~~</h1>
-            <p>Since 1999, Internet Marketing Ninjas has mastered <br/>
-            the art of creating expert content that goes viral, earns trusted links, <br/>
-            and ranks at the top of Google. Looking to transform your content marketing strategy? <br/>
-            Learn how our Ninja team can help by scheduling a FREE consultation today.<br/>
-            
+            <p>The Sabaiba Website was created in the year 2021. <br/>
+                Sabaiba means “survivor” in Japanese language.  <br/>
+                The team Sabaiba who created the website wants to have a site where <br/>
+                the user can share their story and read others' stories.<br/>
+                The difference of the Sabaiba website in other social media platforms is that the user <br/>
+                can only read other’s posts, create their posts and delete them<br/>
+                The creator of the website purposely doesn't add any comment section <br/>
+                or any like icon because the purpose of the website is where the user can share their <br/>
+                thoughts and feelings, not judging user can share their thoughts and feelings, not judging others’ story.<br/>
+                The Sabaiba team believes that if we cannot tell someone what is bothering us or what is <br/>
+                happening to us, you can type it in the website and post it. It is much better to let out your <br/>
+                thoughts by writing than overthinking the problems.<br/>
+                BUT THE SABAIBA TEAM STILL ENCOURAGES EVERYONE TO TALK TO SOMEONE AND OPEN UP. BE HAPPY :)<br/>
+                <br/>
             </div>
         </div>    
         </div>
